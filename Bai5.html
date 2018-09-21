@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhap ten ngoi sao : ");
+    findConstellation(input);
+
+    function findConstellation(str) {
+        let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let constellations = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        for (let i = 0; i < stars.length; i++) {
+            if (stars[i] == str) {
+                alert(constellations[i]);
+                break;
+            } else alert("Xin thu lai, ten ngoi sao khong co trong du lieu");
+            break;
+        }
+    }
+
+
+</script>
+</body>
+</html>
